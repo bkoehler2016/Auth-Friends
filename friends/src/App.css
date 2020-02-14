@@ -44,6 +44,8 @@
   text-align: center;
 }
 
+
+
 h3 {
   color: #fff;
 }
@@ -74,11 +76,10 @@ a {
   color: #204963;
 }
 
-.card {
+.card-deck {
   display: flex;
+  flex-flow: row, wrap;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 15px;
   width: 440px;
   color: black

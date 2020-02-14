@@ -1,13 +1,26 @@
 import React from "react";
-import { Card, CardTitle, CardText } from "reactstrap";
+import {
+  Card,
+  CardTitle,
+  CardText,
+  CardDeck,
+  Container,
+  Col,
+  Row
+} from "reactstrap";
 
 export default function FriendCard(props) {
   console.log(props);
   return (
-    <>
-      <h2>{props.friend.name}</h2>
-      <p>{props.friend.age}</p>
-      <p>{props.friend.email}</p>
-    </>
+    <div>
+      <CardDeck>
+        <Card>
+          <CardTitle>{props.friend.name}</CardTitle>
+
+          <CardText>{props.friend.age}</CardText>
+          <CardText>{props.friend.email}</CardText>
+        </Card>
+      </CardDeck>
+    </div>
   );
 }
