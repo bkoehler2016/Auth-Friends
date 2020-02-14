@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { Button } from "reactstrap";
 
 const Login = props => {
   const [credentials, setCredentials] = useState({
@@ -42,7 +43,7 @@ const Login = props => {
           value={credentials.password}
           onChange={handleChange}
         />
-        <button>Log In</button>
+        <Button color="primary">Log In</Button>
       </form>
     </div>
   );

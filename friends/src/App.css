@@ -1,10 +1,14 @@
+#root {
+  background-color: #2d2d37;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,27 +18,40 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control {
+  border: solid 1px black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
+  text-align: center;
+}
+
+h3 {
+  color: #fff;
+}
+
+.btn {
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -55,4 +72,24 @@ a {
   text-decoration: none;
   padding: 6px;
   color: #204963;
+}
+
+.card {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  width: 440px;
+  color: black
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
