@@ -19,7 +19,10 @@ const Login = props => {
         localStorage.setItem("token", res.data.payload);
         props.history.push("/protected");
       })
-      .catch(err => console.log(err));
+      .catch(err => {
+        localStorage.removeItem("token");
+        console.log("invalid login ", err);
+      });
   };
 
   return (
