@@ -21,7 +21,9 @@ const FriendsList = () => {
       <h3>Add a Friend</h3>
       <FriendForm />
       {friends.map(friend => (
-        <FriendCard key={friend.id} friend={friend} />
+        <section className="friend-list">
+          <FriendCard key={friend.id} friend={friend} />
+        </section>
       ))}
     </div>
   );

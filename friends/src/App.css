@@ -47,7 +47,7 @@
 
 
 h3 {
-  color: #fff;
+  color: black;
 }
 
 .btn {
@@ -76,14 +76,27 @@ a {
   color: #204963;
 }
 
-.card-deck {
-  display: flex;
-  flex-flow: row, wrap;
-  text-align: center;
-  margin-bottom: 15px;
-  width: 440px;
-  color: black
+.friend-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
 }
+
+.friendcard {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  margin: 40px;
+}
+
+
+div.ui.card {
+  display: inline;
+  min-width: 400px;
+  max-width: 440px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
