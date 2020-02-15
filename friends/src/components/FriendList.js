@@ -18,7 +18,7 @@ const FriendsList = () => {
 
   return (
     <div>
-      <h3>Add a Friend</h3>
+      <h1>Add a Friend</h1>
       <FriendForm />
       {friends.map(friend => (
         <section className="friend-list">
