@@ -73,12 +73,22 @@ li {
   list-style: none;
   margin-right: 6px;
   color: #204963;
+  background-color: #2d2d37;
+  border: 1px solid black;
+  border-radius: 20%;
+  font-size: larger;
 }
 
 a {
   text-decoration: none;
   padding: 6px;
   color: #204963;
+}
+
+a:hover {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 20%;
 }
 
 .friend-list {
